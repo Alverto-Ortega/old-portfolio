@@ -1,0 +1,380 @@
+/*----------------------------global----------------------------------------*/
+
+a{
+  color: lawngreen;
+}
+a:visited{
+  color:blueviolet;
+}
+hr{
+  border-top: 3px dashed yellowgreen ;
+}
+tbody{
+  background-color: darkred;
+}
+.content-wrap{
+  margin:45px auto;
+  width: min-content;
+}
+table{  
+  margin:0 auto;
+}
+button{
+  margin: 0 auto;
+  display: inherit;
+}
+.container-fluid{background-color:rgba(27, 73, 3, 0.856); 
+  padding-bottom: 1%; 
+  padding-top: 1%;
+  margin-bottom: 0px; 
+  margin-top: 10px;
+}   
+.container{margin-bottom: 5%; 
+  margin-top:5%; 
+  color:white; 
+  text-align: center;
+}
+.container, .col{border:2px solid black;
+}
+.textBox{
+  opacity: 0.8;
+  background-color: black;
+  margin: auto;
+  /* center */
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  /* center */
+  overflow-wrap: break-word;
+  height: 50%;
+  border:  solid blue;
+  margin-top: 10%;
+  text-align: center;
+  color: blueviolet;
+  font-weight: bolder;
+  position: fixed;
+  z-index: 100;
+}
+.header{
+  background-color: black;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+/*----------------------------Body----------------------------------------*/
+/*selector*/
+body { 
+  /*declaration box*/
+  margin-top: 5px; /*property*/
+  margin-bottom: 5px;
+  background-image: url("cirucuitBoard.jpg");
+ 
+  }
+#jsBody{
+  background: rgb(255, 0, 0);
+}
+#pyBody{
+  background: green;
+}
+#jBody{
+  background:blue;
+}
+#sqlBody{
+  background: yellowgreen;
+}
+/*----------------------------Scroller----------------------------------------*/
+::-webkit-scrollbar {
+  width: 20px;
+  }
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background:greenyellow; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background-color: yellowgreen;
+}
+/*----------------------------Countdown----------------------------------------*/
+
+/*----------------------------tables----------------------------------------*/
+table th, tr {
+  padding-right: 10px; 
+}
+table{background-color:darkgrey; border:3px solid black;
+}
+table th, td{padding-right:10px; padding-left: 10px;
+}
+p#tableInfo{text-align: center; font-size: 15px;  color:chartreuse; padding-bottom: 10px;
+}
+
+#project p.description{
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: justify;
+  padding-left: 19%;
+  padding-right: 19%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  margin-left: 2%;
+}
+/*------------: books--------------*/
+section.book{
+  overflow:scroll;
+  height: 500px;
+}
+section.projectSection{
+  overflow:scroll;
+  height: 500px;
+}
+.book img{
+  margin-left: auto;
+  margin-right: auto;
+  display: table
+
+}
+.book a{
+  text-align: center;
+}
+/*------------classes---------------*/
+
+.list{
+  margin:0 auto;
+  display:table;
+}
+.title {
+  font-weight: bold;
+  display:table;
+  height: 100%;
+  margin: 15px auto;
+  
+  }
+.tableTitle{
+  font-size: 20px;
+}
+.courses{
+  background-color: rgba(27, 73, 3, 0.856);
+  margin-bottom: -35px;
+  
+}  
+.altPage{
+  color:white;
+}
+.container{
+  background-color: darkred;
+}
+.projectSection p.click{
+  margin-bottom:-15%;
+  margin-top: 10%;
+  color:lightgreen;
+}
+.book p.click{
+  margin-top: 10%;
+  color:lightgreen;
+}
+.image1{
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+}
+.image1 img{
+  display:block;
+}
+.image2 img{
+  display: block;
+}
+.image2{
+  margin-top:-40px;
+}
+/*-------------------------------h's-------------------------------------*/
+h1{
+  color: whitesmoke;
+  font-weight: bold; 
+  text-align: center;
+}
+h6 {
+  text-align: center;
+  color:greenyellow;
+  font-weight: bold; }
+
+hr.rounded{
+  border-top:5px solid yellowgreen;
+  border-radius: 5px;
+}
+/*----------------------------divs----------------------------------------*/
+div {
+  font-family:'lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  div h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  div h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+div#demo1, p#demo2 {
+  margin-top:10px;
+  font-size: 25px;
+  color:ghostwhite;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  border-radius: 6px;
+  font-family: cursive;
+  opacity: 0.9;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+/*--------------------------ids------------------------------------------*/
+p#Faves {
+  margin-top: 5%; 
+  color:gainsboro;}
+#owl {
+  width: 80%;
+  height: 25%;
+  border-radius: 70px;
+  margin: 10px auto;
+  display: inherit;
+}
+
+/*----------------------------Main content image ffects------------------------------*/
+a.lightbox img {
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  margin: 94px 20px 20px 20px;
+}
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+/*this is for the outside black shadow with the x mark*/
+.lightbox-target {
+  position: fixed;
+  /* top: -100%; */
+  width: 100%;
+  background-color: black;
+  width: 80%; 
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+  z-index: 1; 
+}
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+.lightbox-target img {
+  margin: auto;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+/* Styles the close link, adds the slide down transition */
+a.lightbox-close {
+  display: block;
+  width:50px;
+  height:50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+.lightbox-target:target {
+  opacity:1;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+}
+.lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 7%;
+  border-radius: 5px;
+}
+.lightbox-target:target a.lightbox-close {
+  top: 0px;
+  opacity: 0.7;
+  background-color: darkred;
+}
+.lightbox-target:target a.lightbox-close:hover{
+  background-color: greenyellow;
+}
+/*----------------------------FORM----------------------------------------*/
+.formTitle{
+  
+  color: yellowgreen;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  display: inherit;
+}
+label{
+
+  font-size: large;
+  color: greenyellow;
+}
+[type=submit]{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+}
+#message{
+  width: 300px;
+}
+/*# sourceMappingURL=styles.css.map */
+/*----------------------------Footer----------------------------------------*/
+.designer {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 30px;
+  text-align: center;
+  background:black;
+  color:white;
+  margin-bottom: -20px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding:10px;
+} 

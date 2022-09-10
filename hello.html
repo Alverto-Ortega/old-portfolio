@@ -1,0 +1,591 @@
+<!-- Design a personal webpage about yourself, one of your interests, or any other topic of choice.-->
+<!DOCTYPE html>
+<html lang="en-US" dir= ltr>
+
+<head>
+        <!-- url reference link for others to make business cards and get 25$
+        https://refer.zazzlereferral.com/alverto -->
+        <!-- required meta tags-->
+        <meta charset="utf-8">
+        <meta name= "viewport" content = "width=device-width, initial-scale = 1, shrink-to-fit= no">
+        <!-- search results descriptopn -->
+        <meta name="description" content="Servicing Connecticut area and surrounding cities.">
+        <!-- link below is a boodstrap css link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- seperate style css sheet -->
+        <link rel="stylesheet" href = "styles.css">
+        <!--bookmark info-->
+        <title>Personal & Portfolio Page</title>
+            
+        <style>   
+             /*use max-width : some % for web responsiveness, for content 
+             that doesnt respond then apply media queries like wrap on flex or grid layouts. */
+            .container-fluid{background-color:rgba(27, 73, 3, 0.856); padding-bottom: 1%; padding-top: 1%;margin-bottom: 0px; margin-top: 10px;}            
+            table{background-color:darkgrey; border:3px solid black;}
+            table th, td{padding-right:10px; padding-left: 10px;}
+            p#tableInfo{text-align: center; font-size: 15px;  color:chartreuse; padding-bottom: 10px;}
+            .container{margin-bottom: 5%; margin-top:5%; color:white; text-align: center;}
+            .container, .col {border:2px solid black;}   
+           
+            .textBox{
+                opacity: 0.8;
+            background-color: black;
+            margin: auto;
+            /* center */
+            top: 25%;
+            bottom: 25%;
+            left: 25%;
+            right: 25%;
+            position: absolute;
+            /* center */
+            overflow-wrap: break-word;
+            height: 50%;
+            border:  solid blue;
+            margin-top: 10%;
+            text-align: center;
+            color: blueviolet;
+            font-weight: bolder;
+            position: fixed;
+            z-index: 100;
+        }
+            /* form{
+                text-align:center;
+            } */
+            ::-webkit-scrollbar {
+            width: 20px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background:greenyellow; 
+            border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: yellowgreen; 
+            }
+
+            div#demo1, p#demo2 {
+            margin-top:10px;
+            font-size: 25px;
+            background-color: darkred;
+            margin-left: auto;
+            margin-right: auto;
+            display: table;
+            border-radius: 6px;
+            color: aliceblue;
+            font-family: cursive;
+            opacity: 0.8;
+            padding-left: 15px;
+            padding-right: 15px;
+            }
+            .header{
+                background-color: black;
+                margin-top: -5px;
+                margin-bottom: -10px;
+            }
+            /*************************************/
+            #paddle{
+            background-color:blueviolet;
+            position:fixed;
+            left: 15px;
+            top:250px;
+            width: 40px;
+            height:85px;
+            border: 2px solid;
+            
+        }
+        #ball{
+            position: absolute;
+            left:350px;
+            top:350px; 
+            
+        }
+        #mainContainer{
+          
+            height: 340px;
+            width: 470px;
+            border:solid;
+            background-color:blacks;
+        }
+        #scoreCount1{
+            position: absolute;
+            left:40%;
+            top:10px;
+            font-size: 70px;
+            color: blueviolet;
+        }
+        #scoreCount1 p{
+            position: absolute;
+            left:50%;
+            top:-15px;
+            font-size: 70px;
+            color: blueviolet;
+        }
+        #scoreCount2{
+            position: absolute;
+            left:60%;
+            top:10px;
+            font-size: 70px;
+            color: blueviolet;
+        }
+        </style>  
+</head>
+    
+<body onkeydown="moveP()" , onload="startBall()">     
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 25, 2020 0:0:0").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo2").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+    </script>   
+
+    <header>
+        <div class = "container-fluid header" >
+            <h1>WELCOME TO MY PERSONAL & PORTFOLIO WEBSITE!</h1>
+            <h6>Based on my College & Self Education.</h6>
+        </div>
+        
+    </header>
+<!-- *************************************************-->
+        <!-- <div class="textBox">
+            <h1>Sorry,<br>Currently Under Maintenance!</h1>
+            <h2>Portfolio Content Updates Coming Soon!</h2>
+            <h3>-Developer Ortega</h3>
+        </div> -->
+
+<!-- **************************************************** -->
+
+
+<section class="courses">
+    <div id="demo1">Countdown Until Christmas! : <p id="demo2"></p></div>
+        <div class = "content-wrap" >        
+        <img  id= "owl" src="IMG_20180629_103220_632.jpg" alt="owl" >
+
+                <table >
+                    <tr >
+                        <th> My computer-related courses taken at SCSU:</th>            
+                        <th>Grades:</th>
+                    </tr>
+                    <tr>
+                        <td>*<a href= "https://en.wikipedia.org/wiki/Computer" target="_blank"> Computer Systems</a>(Hardware/Binary/Assembly) </td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td><a href= "https://en.wikipedia.org/wiki/Computer_ethics" target="_blank">Computer Ethics</a></td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td><a href= "https://en.wikipedia.org/wiki/Database" target="_blank">Database Systems</a></td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td><a href= "https://en.wikipedia.org/wiki/Data_structure" target="_blank">Data Structures</a> (Python) </td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td><a href= "https://en.wikipedia.org/wiki/Microarchitecture" target="_blank" id="compOrgCourse">Computer Organization</a> (Architecture/CPU/Binary/Assembly) </td>
+                        <td>B-</td>
+                    </tr>
+                    <tr>
+                        <td><a href= "https://en.wikipedia.org/wiki/Computer_programming" target="_blank">Programming fundamentals</a> (python language) </td>
+                        <td>B-</td>
+                    </tr>
+                    <tr>
+                        <td ><a href= "https://en.wikipedia.org/wiki/Operating_system" target="_blank">Operating Systems</a></td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td> <a href= "https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">Object-Oriented programming/GUI</a> (Java) </td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>More to be studied soon...</td>
+                        <td></td>
+                    </tr>
+                </table>
+            <p id ="tableInfo">*Clicking on subjects directs you to another site with it's basic information.</p>
+        </div>
+</section>
+
+<main>
+    <div class = "container-fluid ">        
+
+        <!-- <p id = "Faves">These are some of my favorite programming languages so far: </p>
+        <ul>
+            <li>Java</li> <span class = "altPage">The following link will show one of my webpages with Java implementations: <a href="java.html"> Click Here</a>   </span>
+            <li>Python</li> <span class = "altPage">The following link will show one of my webpages with Python implementations: <a href = "python.html">Click Here</a></span>
+            <li>Javascript</li> <span class = "altPage">The following link will show one of webpages with JavaScript implementations: <a href = "jS.html">Click Here</a></span>
+            <li>SQL</li> <span class = "altPage">The following link will show one of my webpages with SQL database implementations: <a href = "sql.html">Click Here</a></span>
+        </ul> -->
+        <!-- Flexbox Grid System-->
+        <div class="container"> <span class = "title">The Master Mind</span> <!--if further changes to center aligning then just sepearte the span title class from the div container-->
+            <div class="row">
+                <div class="col">
+                    Projects I have completed:
+                    <section class="projectSection" id ="project">
+                        <!--Project 1-->
+                        <p class="click">Click on images to expand more information.</p>
+                        <article class="csProjects" >
+                            <a class = "lightbox" href="#jProject"><img src= "images/mattWebsiteCover.png"  width="420px" height="250px"/></a>
+                            <p>Developed a Construction & landscaping service website for a client to showcase their work</p>
+                            <div class="lightbox-target" id="jProject">
+                                <img src ="images/mattWebsiteCover.png" width="550px" height="276px"/>
+                                <section>
+                                    <h2>Landscape And Construction Service Web Site</h2>
+                                    <p class="description">This is a website I built for a client who wanted a website built to showcase his landscape and construction work. He wanted to keep it as simple as possible so that any clients he directs to his webpage can directly get an idea of his service through some of the work he has previously done. An Email function was added so that the owner can receive an email message from any interested client. I chose the color purple since it is the companies' color and to complement the purple I added strokes of Gold. To satisfy my client's desire I kept it simple as far as technologies used: <br>
+                                    <span class="list" >HTML, CSS, JavaScript, PHP</span> <br>
+                                    Vist the website: <a href="https://www.matthewhlc.com" target="_blank">https://www.matthewhlc.com</a>
+                                    </p></br>                                
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div>
+                        </article>
+                        <hr/>
+                        <!--Project 2-->
+                        <article class="csProjects">
+                            <a class = "lightbox" href="#jProject2"><img src= "images/MMCover.jpg"  width="420px" height="250px"/></a>
+                            <p>Developed a Google Chrome Extension App. called Magic Markup.</p>
+                            <div class="lightbox-target" id="jProject2">
+                                <div class="image1">
+                                    <img src ="images/bigMMUI.jpg" width="420px" height="250px"/>
+                                </div>
+                                </br>
+                                <div class="image2">
+                                    <img src ="images/smallMMUI.jpg" width="420px" height="250px"/>
+                                </div>
+                                <section>
+                                    <h2>Magic Markup Google Chrome Extension</h2>
+                                    <p class="description">One of the projects I enjoyed the most, I developed a<i> Google Chrome Extension</i> application called <b>Magic Markup</b> that enables markup on any chrome web page screen along with other productivity tools such as screenshot functionality, eraser and more to come. As soon as this project is fully completed I will upload it to the chrome web store for users to use for free. <br>
+                                    The technologies used were <i>JavaScript, HTML and CSS.</i><br>
+                                    In the process I dove deep into the <i><b>Document-object Model(DOM)</b></i> how to manipulate the entire web document. I also learned a lot about using the <i><b>HTMl Canvas</b></i> element which is the container used to draw graphics on. The graphics were implemented by strictly JavaScript code which enhanced my understanding of manipulating the DOM and HTML CSS properties via JavaScript.<br>
+                                        check out my <a href="images/FinalReport.pdf" target="_blank">PDF Documentation</a> report(SRS) for all of the details.
+                                    </p></br>
+                                </section>     
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div>
+                        </article>
+                        <hr/>
+                        <!--Project 3-->
+                        <article class="csProjects">
+                            <a class = "lightbox" href="#jProject3"><img src= "images/waitingListAppCover.jpg"  width="420px" height="250px"/></a>
+                            <p>Developed a Web Application as an extension for the Southern CT state university banner website.</p>
+                            <div class="lightbox-target" id="jProject3">
+                                <img src ="images/SchoolWaitingListApp.jpg" width="550px" height="276px"/>
+                                <section>
+                                    <h2>SCSU Student Waiting list option Web App.</h2>
+                                    <p class="description">As a group from my software development group we created a web application which extends the website banner registration page which implements a waiting list option for students looking to get into a class that has already been filled up to its' maximum capacity. The three main funtions are as follows: </br>First, it is designed to help students meet their requirements for graduation. Our software is designed to allow seniority importance by implementing a waitlist prioritized towards Seniors. Our software will also implement a notification system, such that if a required class has an opening the student will be immediately notified of the opening. We also notify students in case the class cancels.</br>Second, it allows faculty to see what majors are showing interest in classes they will teach so as to help prepare for the class.</br>Third, our software keeps track of how much interest a particular class is receiving so an administrator could determine if another section of the class needs to be opened. </br>In working with this project I had to think about all case scenarios for both students and faculty so that there will be no room for errors. As a team we were productive using the <i><b>Agile methodology</b></i> therefore we discussed functions, ideas and roles before even thinking about the user interface or how we would implement the features. </br>The making of this project involved the following technologies: </br><i><b>Python, JavaScript, HTML, CSS, MYSQL, Google Developmemt Console(GDP), Flask, Jinja, linux command prompt, git, GitHub, Slack and Trello in an Agile environment.</b></i>
+                                    </p><br>
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div>
+                        </article>
+                        <hr/>
+                        <!--Project 4-->
+                        <article class="csProjects">
+                           
+                            <a class = "lightbox" href="#jProject4"><img src= "images/pingPongGame.jpg"  width="420px" height="250px"/></a>
+                            
+                                
+                            <!-- <div id="mainContainer" >
+                                <div id="scoreContainer">
+                                    <h1 id="scoreCount1"></h1> <p>:</p> <h1 id=scoreCount2></h1>
+                                </div>
+                                <div id = "paddle" ></div>
+                                <div id =  "ball"> <img src ="pix/Ball.gif "></div>
+                            </div> -->
+                          
+                            <p>Developed a simple version of the classic Ping Pong Game</p>
+                            <div class="lightbox-target" id="jProject4">
+                                <img src ="images/pingPongGame.jpg" width="550px" height="276px"/>
+                                <section>
+                                    <h2>The Classic Ping Pong Game</h2>
+                                    <p class="description"> Grew up playing some good ol' Ping Pong games...online. </br>
+                                        My eager desire to know how this game is implemented on the web, I have created a very simple <i>Ping Pong</i>game which shows the basic idea behind the game through basic play. The knowledge obtained through implementing movement actions across the web page involved position in points across the web container with minimal math usage to pinpoint locations. </br> The making of this project involved the following technologies:</br> Pure JavaScript and HTML.(CSS properties through JS) </br>If you'd like to check out the files for this, click <a href="">my GitHub</a>
+                                    </p></br>
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div>
+                        </article>
+                        <hr/>
+                        <!--Project 5-->
+                        <article class="csProjects">
+                           
+                            <a class = "lightbox" href="#jProject5"><img src= "images/pacManGame.jpg" width="420px" height="250px"/></a>
+                            <p>Developed a simple version of the classic Pac Man Game.</p>
+                            <div class="lightbox-target" id="jProject5">
+                                <img src ="images/pacManGame.jpg" width="550px" height="276px"/>
+                                <section>
+                                    <h2>The Classic Pac-Man Game</h2>
+                                    <p class="description">The classic </i>Pac-Man</i> game was fun to create and I plan to continue working on this project further ahead while adding new features. Building this Basic <i>pacman</i> game gave me insights into when an iterative function such as the for loop would best be useful. Seeing how tedious and repetative it would be to create div after div or and other similar elements as the building blocks for the maze container design would call for a <i>for</i> or <i>while</i> loop to automate repetetive tasks.</br> The making of this project involved the following technologies:</br> Pure JavaScript and HTML.(CSS properties through JS)
+                                    </p></br>
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div>
+                        </article>
+                        <hr/>
+                        <!--Project 6-->
+                        <article class="csProjects">
+                           
+                            <a class = "lightbox" href="#jProject6"><img src= "images/cpuDesign.png" width="420px" height="250px"/></a>
+                            <p>Designed a CPU architecture including ALU.</p>
+                            <div class="lightbox-target" id="jProject6">
+                                <img src ="images/cpuDesign.png" width="550px" height="276px"/>
+                                <section>
+                                    <h2>CPU Circtuit Component Including 8-bit ALU And Ram Memory</h2>
+                                    <p class="description"> In my <a href="#compOrgCourse">Computer Organization</a> course I wouldn't take for granted how much work was put into the mechanics of the heart of the computer, the <i>CPU</i>.</br> <i><b>Logic</b></i> in connection  with <i><b>cpu component knowledge</b></i> was the foundation to this process. From <i>Addition and Subtraction to Division and Multiplication and Logical Operations to say the least, the way the computer operates still seems magical. These <i>binary bits</i> of information otherwise known as <i>Data</i> are used to be written into memory, RAM selection and all sorts of operations for whatever to the user desires.</br></br> The making of this project involved the following technology:</br><b><i> Logisim(software used for digital logic circuit simulations)</i></b></p></br>
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div>
+                        </article>
+                        <hr/>
+                        <!--Project 7-->
+                        <article class="csProjects">
+                           <h2>Will be updating the following projects being built soon!...</h2>
+                            <!-- <a class = "lightbox" href="#jProject7"><img src= "JavaProjectStudentTuitionCost.JPG"  width="420px" height="250px"/></a> -->
+
+                            <p >Developing a Social Media Web Application...</p>
+                            <!-- <div class="lightbox-target" id="jProject7">
+                                <img src ="JavaProjectStudentTuitionCost.JPG" width="550px" height="276px"/>
+                                <section>
+                                    <h2></h2>
+                                    <p>
+                                    </p></br>
+                                
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                            </div> -->
+                        </article>
+                        <hr/>
+                        <!--Project 8-->
+                        <article class="csProjects">
+
+
+                            <!-- <a class = "lightbox " href="#jProject8"><img src= "JavaProjectStudentTuitionCost.JPG"  width="420px" height="250px"/></a> -->
+                            <p>Developing a E-commerce Web Application...</p>
+                            <!-- <div class="lightbox-target" id="jProject8">
+                                <img src ="JavaProjectStudentTuitionCost.JPG" width="550px" height="276px"/>
+                                <section>
+                                    <h2></h2>
+                                    <p>
+                                    </p></br>
+                                </section>
+                                <a class= "lightbox-close" href="#project"></a>
+                                
+                            </div> -->
+                        </article>
+                        <hr/>
+                        <!--Project 9-->
+                        <article class="csProjects">
+                           
+                            <!-- <a class = "lightbox" href="#jProject"><img src= "JavaProjectStudentTuitionCost.JPG"  width="420px" height="250px"/></a> -->
+                            <p>Developing a state of Connecticut tour web page for visitors...</p>
+                            <!-- <div class="lightbox-target" id="jProject">
+                                <img src ="JavaProjectStudentTuitionCost.JPG" width="550px" height="276px"/>
+                                <section>
+                                    <h2></h2>
+                                    <p>
+                                    </p></br>
+                                </section>
+                                <a class= "lightbox-close" href="#"></a>
+                            </div> -->
+                        </article>
+                        <hr/>
+                        
+                    </section>
+                </div>
+                <div class="col">
+                    <!-- goodreads api key :  OemZwQpj4hjnfNr7iIkaGw
+                    secret: KExADmqpdhJWYFHybr4tqWmLQ9DREAm1sYNMKePlWeY-->
+                    <section class="book"> Some Books I Have Read(computer related) :
+                        <p class="click">Click on book title to direct you to more information about the book</p> 
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401432508l/4099.jpg" alt="The Pragmatic programmer book cover" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer?ac=1&from_search=true&qid=A69luEJMbW&rank=1" target="_blank">The Pragmatic Programmer</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387741681l/108986.jpg" alt="Intro to algorithms book cover" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/108986.Introduction_to_Algorithms?ac=1&from_search=true&qid=fTmNWNB0b1&rank=1" target="_blank">Introduction to Algorithms</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348845247l/926117.jpg" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/926117.Computer_Ethics_and_Professional_Responsibility?ac=1&from_search=true&qid=FpGszKk3ZT&rank=1" target="_blank">Computer Ethics and Professional Responsibility</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404959332l/21510195.jpg" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/21510195-web-development-with-node-and-express" target="_blank">Web Development with Node and Express</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349022754l/478566.jpg" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/478566.Discrete_Mathematics_with_Applications" target="_blank">Discrete Mathematics with Applications</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1416178050l/22251137.jpg" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/22251137-a-practical-guide-to-ubuntu-linux" target="_blank">A Practical Guide to Ubuntu Linux</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347421491l/7963008.jpg" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/7963008-introduction-to-java-programming" target="_blank">Intro. to Java Programming</a>
+                            <hr/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440458472l/26160109._SX318_.jpg" width="125px"/>
+                            <a href="https://www.goodreads.com/book/show/26160109-linear-algebra-and-its-applications" target="_blank">Linear Algebra and Its Applications</a>
+                            <br/><hr class="rounded"/>
+                            Credits: goodreads.com<br>
+                            Follow my <a href="https://www.goodreads.com/knowtheunknown" target="_blank">Personal goodread account!</a>
+                    </section>
+
+                </div>
+            </div>              
+        </div>
+    </div>
+        
+</main>
+
+<div class = "container-fluid">    
+    <!-- email form -->
+    <section class="form">
+        <div class="content-wrap">
+            <span class="formTitle">Contact me!</span>
+            <form action="success.html" method="POST">
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Enter name here">
+            </br>
+                <label for="message">Message:</label>
+            </br>
+                <textarea id="message" name="message" rows="10" cols="50" type="text" placeholder="Enter message here..."></textarea>
+
+            </br>
+                <label for="email">Your Email:</label>
+                <input id="email" name="email" type="email" required placeholder="yourEmail@example.com">
+                
+                <button type="submit" value="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Review Form  -->
+</div>
+
+<footer>
+    <div class = "designer">
+            <span >Page designed by: Alverto Ortega</span>
+    </div>
+</footer>
+    
+
+
+
+
+    <!-- var paddleHeight = 85;
+    var paddleWidth = 40;
+    var halfPaddleHeight = paddleHeight/2;
+    var speedOfPaddle1 = 0;
+    var positionOfPaddle =250;
+    var topPositionOfBall = 350;
+    var leftPositionOfBall = 350;
+    var topSpeedOfBall = 0;
+    var leftSpeedOfBall =0;
+    var score1 =0;
+    var score2 = 0;
+    var mainContainer = 650;
+    var mainContainerWidth = 800;
+
+    //move paddle
+    function moveP(){
+    //works with internet explorer
+
+    var ky = event.keyCode;
+    var keyUP = event.which;
+   
+    if (ky == 38 ){
+        
+        positionOfPaddle = positionOfPaddle -  10;
+        speedOfPaddle1 = -10;
+        paddle.style.top= positionOfPaddle + "px";
+        
+    }else if (ky == 40){
+        positionOfPaddle = positionOfPaddle + 10;
+        speedOfPaddle1 = 10;
+        paddle.style.top = positionOfPaddle  + "px";
+    }
+    if(keyUP == 38 || keyUP == 40){
+        speedOfPaddle1=0;
+    }
+
+    positionOfPaddle += speedOfPaddle1;
+    if(positionOfPaddle <= 25){
+        positionOfPaddle = 25;
+    }
+    if(positionOfPaddle >=  mainContainer-paddleHeight){
+        positionOfPaddle = mainContainer-paddleHeight;
+    }
+
+    }
+
+    //ball movements
+    window.setInterval(function show() {
+        positionOfPaddle += speedOfPaddle1;
+        topPositionOfBall += topSpeedOfBall;
+        leftPositionOfBall += leftSpeedOfBall;
+        ball.style.top = topPositionOfBall + "px"
+        ball.style.left= leftPositionOfBall + "px"
+        paddle.style.top = positionOfPaddle + "px"
+        //for the top and bottom wall:
+           //for the top and bottom wall:
+           if (topPositionOfBall <= 3 || topPositionOfBall >= mainContainer-45 ){
+            topSpeedOfBall = -topSpeedOfBall
+        }
+        //for the left wall, rebound from hitting paddle, reset after past paddle:
+        if(leftPositionOfBall <= paddleWidth  && topPositionOfBall > positionOfPaddle && topPositionOfBall < positionOfPaddle + paddleHeight){
+                leftSpeedOfBall = -leftSpeedOfBall;
+        }else if(leftPositionOfBall <= 0){
+            score1++
+            startBall();         
+        }    
+        //for the right wall:
+        if(leftPositionOfBall >= mainContainerWidth -45){
+            score2++
+            startBall();
+        }
+        scoreCount1.innerHTML = score1.toString()
+        scoreCount2.innerHTML = score2.toString()
+    }, 1000/50);
+    //ball function for random movement within container
+    function startBall(){
+        topPositionOfBall = 350;
+        leftPositionOfBall = 350;
+        if (Math.random() <0.5){
+            var side =1
+        }else{
+            var side = -1
+        }
+        topSpeedOfBall = Math.random() * -2-3;
+        leftSpeedOfBall = side* (Math.random() * 2+3);
+    }; -->
+
+
+    </body>
+</html>
