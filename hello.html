@@ -1,11 +1,7 @@
-<!-- Design a personal webpage about yourself, one of your interests, or any other topic of choice.-->
 <!DOCTYPE html>
 <html lang="en-US" dir= ltr>
 
 <head>
-        <!-- url reference link for others to make business cards and get 25$
-        https://refer.zazzlereferral.com/alverto -->
-        <!-- required meta tags-->
         <meta charset="utf-8">
         <meta name= "viewport" content = "width=device-width, initial-scale = 1, shrink-to-fit= no">
         <!-- search results descriptopn -->
@@ -18,8 +14,6 @@
         <title>Personal & Portfolio Page</title>
             
         <style>   
-             /*use max-width : some % for web responsiveness, for content 
-             that doesnt respond then apply media queries like wrap on flex or grid layouts. */
             .container-fluid{background-color:rgba(27, 73, 3, 0.856); padding-bottom: 1%; padding-top: 1%;margin-bottom: 0px; margin-top: 10px;}            
             table{background-color:darkgrey; border:3px solid black;}
             table th, td{padding-right:10px; padding-left: 10px;}
@@ -48,9 +42,6 @@
             position: fixed;
             z-index: 100;
         }
-            /* form{
-                text-align:center;
-            } */
             ::-webkit-scrollbar {
             width: 20px;
             }
@@ -139,10 +130,10 @@
         </style>  
 </head>
     
-<body onkeydown="moveP()" , onload="startBall()">     
+<body>     
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Dec 25, 2020 0:0:0").getTime();
+        var countDownDate = new Date("Dec 27, 2022 0:0:0").getTime();
         
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -160,13 +151,13 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
           // Output the result in an element with id="demo"
-          document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+          document.getElementById("timer").innerHTML = days + "d " + hours + "h "
           + minutes + "m " + seconds + "s ";
             
           // If the count down is over, write some text 
           if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo2").innerHTML = "EXPIRED";
+            document.getElementById("timer").innerHTML = "EXPIRED";
           }
         }, 1000);
     </script>   
@@ -178,18 +169,8 @@
         </div>
         
     </header>
-<!-- *************************************************-->
-        <!-- <div class="textBox">
-            <h1>Sorry,<br>Currently Under Maintenance!</h1>
-            <h2>Portfolio Content Updates Coming Soon!</h2>
-            <h3>-Developer Ortega</h3>
-        </div> -->
-
-<!-- **************************************************** -->
-
-
 <section class="courses">
-    <div id="demo1">Countdown Until Christmas! : <p id="demo2"></p></div>
+    <div id="demo1">Countdown Until My Birthday! : <p id="timer"></p></div>
         <div class = "content-wrap" >        
         <img  id= "owl" src="IMG_20180629_103220_632.jpg" alt="owl" >
 
@@ -241,16 +222,7 @@
 
 <main>
     <div class = "container-fluid ">        
-
-        <!-- <p id = "Faves">These are some of my favorite programming languages so far: </p>
-        <ul>
-            <li>Java</li> <span class = "altPage">The following link will show one of my webpages with Java implementations: <a href="java.html"> Click Here</a>   </span>
-            <li>Python</li> <span class = "altPage">The following link will show one of my webpages with Python implementations: <a href = "python.html">Click Here</a></span>
-            <li>Javascript</li> <span class = "altPage">The following link will show one of webpages with JavaScript implementations: <a href = "jS.html">Click Here</a></span>
-            <li>SQL</li> <span class = "altPage">The following link will show one of my webpages with SQL database implementations: <a href = "sql.html">Click Here</a></span>
-        </ul> -->
-        <!-- Flexbox Grid System-->
-        <div class="container"> <span class = "title">The Master Mind</span> <!--if further changes to center aligning then just sepearte the span title class from the div container-->
+        <div class="container"> <span class = "title">The Master Mind</span> 
             <div class="row">
                 <div class="col">
                     Projects I have completed:
@@ -316,16 +288,6 @@
                         <article class="csProjects">
                            
                             <a class = "lightbox" href="#jProject4"><img src= "images/pingPongGame.jpg"  width="420px" height="250px"/></a>
-                            
-                                
-                            <!-- <div id="mainContainer" >
-                                <div id="scoreContainer">
-                                    <h1 id="scoreCount1"></h1> <p>:</p> <h1 id=scoreCount2></h1>
-                                </div>
-                                <div id = "paddle" ></div>
-                                <div id =  "ball"> <img src ="pix/Ball.gif "></div>
-                            </div> -->
-                          
                             <p>Developed a simple version of the classic Ping Pong Game</p>
                             <div class="lightbox-target" id="jProject4">
                                 <img src ="images/pingPongGame.jpg" width="550px" height="276px"/>
@@ -426,8 +388,6 @@
                     </section>
                 </div>
                 <div class="col">
-                    <!-- goodreads api key :  OemZwQpj4hjnfNr7iIkaGw
-                    secret: KExADmqpdhJWYFHybr4tqWmLQ9DREAm1sYNMKePlWeY-->
                     <section class="book"> Some Books I Have Read(computer related) :
                         <p class="click">Click on book title to direct you to more information about the book</p> 
                             <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401432508l/4099.jpg" alt="The Pragmatic programmer book cover" width="125px"/>
@@ -481,111 +441,16 @@
             </br>
                 <label for="email">Your Email:</label>
                 <input id="email" name="email" type="email" required placeholder="yourEmail@example.com">
-                
                 <button type="submit" value="submit">Send Message</button>
             </form>
         </div>
     </section>
     <!-- Review Form  -->
 </div>
-
 <footer>
     <div class = "designer">
             <span >Page designed by: Alverto Ortega</span>
     </div>
-</footer>
-    
-
-
-
-
-    <!-- var paddleHeight = 85;
-    var paddleWidth = 40;
-    var halfPaddleHeight = paddleHeight/2;
-    var speedOfPaddle1 = 0;
-    var positionOfPaddle =250;
-    var topPositionOfBall = 350;
-    var leftPositionOfBall = 350;
-    var topSpeedOfBall = 0;
-    var leftSpeedOfBall =0;
-    var score1 =0;
-    var score2 = 0;
-    var mainContainer = 650;
-    var mainContainerWidth = 800;
-
-    //move paddle
-    function moveP(){
-    //works with internet explorer
-
-    var ky = event.keyCode;
-    var keyUP = event.which;
-   
-    if (ky == 38 ){
-        
-        positionOfPaddle = positionOfPaddle -  10;
-        speedOfPaddle1 = -10;
-        paddle.style.top= positionOfPaddle + "px";
-        
-    }else if (ky == 40){
-        positionOfPaddle = positionOfPaddle + 10;
-        speedOfPaddle1 = 10;
-        paddle.style.top = positionOfPaddle  + "px";
-    }
-    if(keyUP == 38 || keyUP == 40){
-        speedOfPaddle1=0;
-    }
-
-    positionOfPaddle += speedOfPaddle1;
-    if(positionOfPaddle <= 25){
-        positionOfPaddle = 25;
-    }
-    if(positionOfPaddle >=  mainContainer-paddleHeight){
-        positionOfPaddle = mainContainer-paddleHeight;
-    }
-
-    }
-
-    //ball movements
-    window.setInterval(function show() {
-        positionOfPaddle += speedOfPaddle1;
-        topPositionOfBall += topSpeedOfBall;
-        leftPositionOfBall += leftSpeedOfBall;
-        ball.style.top = topPositionOfBall + "px"
-        ball.style.left= leftPositionOfBall + "px"
-        paddle.style.top = positionOfPaddle + "px"
-        //for the top and bottom wall:
-           //for the top and bottom wall:
-           if (topPositionOfBall <= 3 || topPositionOfBall >= mainContainer-45 ){
-            topSpeedOfBall = -topSpeedOfBall
-        }
-        //for the left wall, rebound from hitting paddle, reset after past paddle:
-        if(leftPositionOfBall <= paddleWidth  && topPositionOfBall > positionOfPaddle && topPositionOfBall < positionOfPaddle + paddleHeight){
-                leftSpeedOfBall = -leftSpeedOfBall;
-        }else if(leftPositionOfBall <= 0){
-            score1++
-            startBall();         
-        }    
-        //for the right wall:
-        if(leftPositionOfBall >= mainContainerWidth -45){
-            score2++
-            startBall();
-        }
-        scoreCount1.innerHTML = score1.toString()
-        scoreCount2.innerHTML = score2.toString()
-    }, 1000/50);
-    //ball function for random movement within container
-    function startBall(){
-        topPositionOfBall = 350;
-        leftPositionOfBall = 350;
-        if (Math.random() <0.5){
-            var side =1
-        }else{
-            var side = -1
-        }
-        topSpeedOfBall = Math.random() * -2-3;
-        leftSpeedOfBall = side* (Math.random() * 2+3);
-    }; -->
-
-
+</footer>   
     </body>
 </html>
